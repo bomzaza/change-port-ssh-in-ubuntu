@@ -1,0 +1,6 @@
+1. sudo vim /ect/ssh/sshd_config
+ *คุณจะเห็นคำว่า #port 22 เปลี่ยน พอร์ต ตามที่ต้องการ เช่น port 3501 (เอา # ด้านหน้าออกด้วยนะ)
+2. sudo vim /ect/service 
+ *คุณจะเห็น port ต่างๆๆ ให้เลือนหา ssh เปลี่ยนจากของเดิม ssh    22/tcp เป็น  portของคุณ/tcp 
+3. sudo ufw allow ssh
+    อนุญาตให้ ssh Rule
